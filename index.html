@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Himpunan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Kalkulator {H,i,m,p,u,n,a,n}</h2>
+    <p class="main">Kalkulator berbasis web sederhana untuk menghitung operasi-operasi antara dua buah himpunan.</p>
+    <span class="main"><b>Note: </b>Pisahkan anggota himpunan dengan koma (,)</span>
+    <div id="app" class="main">
+        <p>Himpunan Semesta</p>
+        <span class="line"></span>
+        <input type="text" class="u" placeholder="Masukkan Anggota Himpunan Semesta">
+        <p>Himpunan Anggota</p>
+        <span class="line"></span>
+        <input type="text" class="a" placeholder="Masukkan Anggota Himpunan A">
+        <input type="text" class="b" placeholder="Masukkan Anggota Himpunan B">
+        <button onclick="validate()">Hitung</button>
+    </div>
+    <button class="result" onclick="back()">Kembali</button>
+    <div class="result">
+        <div class="inp">
+            <p>Himpunan Semesta</p>
+            <div class="himpunan-semesta">
+                
+            </div>
+            <p>Himpunan A</p>
+            <div class="himpunan-a">
+                
+            </div>
+            <p>Himpunan B</p>
+            <div class="himpunan-b">
+                
+            </div>
+        </div>
+    </div>
+    <h2 class="result">Hasil</h2>
+    <div class="result">
+        <div class="inp">
+            <p>Irisan (A ∩ B)</p>
+            <div class="himpunan intersect">
+                
+            </div>
+            <p>Gabungan (A ∪ B)</p>
+            <div class="himpunan union">
+                
+            </div>
+            <p>Komplemen (A')</p>
+            <div class="himpunan inversA">
+                
+            </div>
+            <p>Komplemen (B')</p>
+            <div class="himpunan inversB">
+                
+            </div>
+            <p>Selisih (A − B)</p>
+            <div class="himpunan diffAB">
+                
+            </div>
+            <p>Selisih (B − A)</p>
+            <div class="himpunan diffBA">
+                
+            </div>
+            <p>Beda Setangkup (A ⨁ B)</p>
+            <div class="himpunan symDiff">
+                
+            </div>
+            <p>Perkalian (A × B)</p>
+            <textarea class="himpunan cartProdAB">
+               
+            </textarea>
+            <p>Perkalian (B × A)</p>
+            <textarea class="himpunan cartProdBA">
+                
+            </textarea>
+        </div>
+    </div>
+
+    <footer>
+        dibuat dengan vanila js & pure css oleh <a href="https://snowfluke.github.io/">awal ariansyah | source code <a href="https://github.com/snowfluke/kalkulatorhimpunan/">kalkulatorHimpunan</a> </a>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
