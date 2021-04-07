@@ -60,10 +60,10 @@ function calc(U,A,B){
     const symDiff = [...new Set([...A, ...B])].filter( anggota => !intersect.includes(anggota))
     $('.symDiff').innerHTML = `{ ${symDiff} }`
 
-    const cartProdAB = [].concat(...A.map( (el,id) => B.map( ef => el*ef)))
+    const cartProdAB = [].concat(...A.map( (el,id) => B.map( ef => el*ef === NaN? el+ef: el*ef)))
     $('.cartProdAB').innerHTML = `{ ${cartProdAB} }`
 
-    const cartProdBA = [].concat(...B.map( (el,id) => A.map( ef => el*ef)))
+    const cartProdBA = [].concat(...B.map( (el,id) => A.map( ef => el*ef === NaN? el+ef: el*ef)))
     $('.cartProdBA').innerHTML = `{ ${cartProdBA} }`
 
     return
